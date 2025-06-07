@@ -23,17 +23,11 @@ def authenticate_gee():
         raise
 
 def predict_health(location):
-# CELL 1: Run the setup
-    #location = input("Enter your location: ")
+    
     predictor = quick_setup(location)
     
-    # CELL 2: Train and predict
     return train_and_predict(predictor, forecast_days=30)
     
-    # CELL 3: View results
-    #predictor.plot_results(predictions)
-    #return predictor.get_summary(predictions)
-
 
 def main():
     #giving title

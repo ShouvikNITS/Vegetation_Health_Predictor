@@ -13,8 +13,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
 import pickle
-#from utils import quick_setup, train_and_predict
-# from HealthPredictor import *
 warnings.filterwarnings('ignore')
 
 
@@ -33,7 +31,6 @@ class VegetationHealthPredictor:
         self.feature_cols = None
         self.is_trained = False
 
-    # Add __getstate__ and __setstate__ methods to handle pickling
     def __getstate__(self):
         """Return state to be pickled"""
         state = self.__dict__.copy()
@@ -570,7 +567,7 @@ class VegetationHealthPredictor:
             print(f"❌ Error loading model: {e}")
             return None
 
-def quick_setup(location_name, start_date="2000-01-01", end_date="2025-06-06"):
+def quick_setup(location_name, start_date="2000-01-01", end_date=datetime.now().date()):
     """Quick setup function for Colab"""
     print(f"🚀 Setting up vegetation health predictor for {location_name}...")
 
