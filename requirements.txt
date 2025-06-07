@@ -1,0 +1,9 @@
+earthengine-api
+pandas
+numpy
+requests
+geopy
+scikit-learn
+matplotlib
+seaborn
+streamlit
