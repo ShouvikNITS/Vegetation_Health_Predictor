@@ -71,7 +71,7 @@ def main():
         """)
 
     st.markdown("---")
-    st.caption("© 2025 GreenTech | Built by Shouvik with ❤️")
+    st.caption("© 2025 GreenTech ")
 
 if __name__ == '__main__':
     main()
