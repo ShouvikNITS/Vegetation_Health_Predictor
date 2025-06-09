@@ -53,7 +53,13 @@ def main():
                     prediction = predict_health([location])
                     st.success("✅ Prediction complete!")
                     st.markdown("### 🌿 Vegetation Forecast (Next 30 Days)")
-                    st.json(prediction)
+                    if isinstance(prediction, (dict, list)):
+                        st.json(prediction)
+                    elif isinstance(prediction, str):
+                        st.code(prediction, language='text')
+                    else:
+                        st.write("🔍 Output:")
+                        st.write(prediction)
                 except Exception as e:
                     st.error(f"❌ Error during prediction: {str(e)}")
 
