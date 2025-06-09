@@ -567,7 +567,7 @@ class VegetationHealthPredictor:
             print(f"❌ Error loading model: {e}")
             return None
 
-def quick_setup(location_name, start_date="2000-01-01", end_date=datetime.now().date()):
+def quick_setup(location_name, start_date="2000-01-01", end_date="2025-12-31"):
     """Quick setup function for Colab"""
     print(f"🚀 Setting up vegetation health predictor for {location_name}...")
 
