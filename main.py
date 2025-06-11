@@ -71,13 +71,12 @@ def main():
         It helps forecast vegetation health in a region for the next 30 days using a machine learning model trained on:
         - NDVI trends
         - Temperature, rainfall, humidity
-        - Optional soil nutrient data (if available)
 
         Ideal for farmers, researchers, and policymakers 👨‍🌾📊🌱
         """)
 
     st.markdown("---")
-    st.caption("© 2025 GreenTech ")
+    st.caption("© 2025 GreenInnovators ")
 
 if __name__ == '__main__':
     main()
